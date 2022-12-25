@@ -1,0 +1,140 @@
+:root {
+    --main-bg: #1e202b;
+    --main-color: #009ad8;
+    --secondry-color: #bfc1c8;
+}
+
+.main-bg {
+    background-color: var(--main-bg);
+}
+
+.secondry-bg {
+    background-color: var(--main-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.secondry-color {
+    color: var(--secondry-color);
+}
+
+* {
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.logo {
+    width: 60px;
+}
+
+.nav-link-custom {
+    text-transform: capitalize;
+}
+
+.nav-link-custom {
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s ease;
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.site-title {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+}
+
+.site-description {
+    color: #bfc1c8;
+    font-size: 0.7rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.search-bar {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    padding-top: 70px;
+}
+
+.search-bar-form {
+    padding: 5px 10px;
+}
+
+input[type="text"] {
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.find-btn {
+    top: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+.body-bg {
+    background-color: var(--main-bg);
+}
+
+.today-weather-bg {
+    background-color: #323544;
+}
+
+.weather-header-bg {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.city-name {
+    color: #bfc1c8;
+}
+
+.weather-degree {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.future-days-degree-font {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.second-day-bg {
+    background-color: #262936;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .nav-link-custom:hover {
+        border-color: var(--main-color);
+        color: var(--main-color) !important;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .logo {margin-bottom: 10px;}
+    nav {text-align: center;}
+    .nav-elements {flex-direction: column;}
+    .icon {margin-bottom: 10px;}
+    .nav-links{
+        flex-direction: column !important;
+        background-color: #262936;
+    }
+    .nav-link-custom {
+        border-bottom: 1px #fff solid;
+        padding: 10px;
+        border-radius: 0;
+        margin-right: 0;
+    }
+    
+    .last-link{border: none;}
+}

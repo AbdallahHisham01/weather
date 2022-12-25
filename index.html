@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body class="body-bg h-100">
+    <nav class="text-light main-bg p-4">
+        <div class="container">
+            <div class="row nav-elements align-items-center">
+                <div class="icon col-lg-6 col-12">
+                    <a href="#">
+                        <img class="logo me-3" src="https://routeweather.netlify.app/images/logo@2x.png" />
+                    </a>
+                    <div>
+                        <span class="site-title">Weather</span>
+                        <span class="site-description">tagline goes here</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="nav-links row flex-row">
+                        <a class="nav-link w-auto nav-link-custom" href="#">home</a>
+                        <a class="nav-link w-auto nav-link-custom" href="#">news</a>
+                        <a class="nav-link w-auto nav-link-custom" href="#">
+                            live cameras
+                        </a>
+                        <a class="nav-link w-auto nav-link-custom">photos</a>
+                        <a class="nav-link last-link w-auto nav-link-custom">contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <div class="container">
+                <div class="search-bar-form main-bg rounded-pill position-relative">
+                    <input type="text" class="w-75 main-bg px-2 rounded-pill p-1" placeholder="Find your location..." />
+                    <input type="submit" value="Find"
+                        class="find-btn secondry-bg text-light rounded-pill position-absolute end-0 me-1" />
+                </div>
+            </div>
+        </section>
+
+        <!-- W   E   A   T   H   E   R            F     O    R   E   C   A   S   T -->
+        <section id="weather" class="position-relative w-100">
+            <div class="container translate-middle position-absolute start-50 top-0">
+                <div class="row m-0">
+                    <!-- F  I    R   S   T                D  A   Y -->
+                    <div class="today-weather-bg rounded-start col-lg-4">
+                        <div class="weather-header-bg row p-2 secondry-color">
+                            <p id="toDayName" class="col-6 m-0 text-capitalize"></p>
+                            <p class="col-6 m-0 text-end">
+                                <span id="toDayNum"></span>
+                                <span id="toDayMonth"></span>
+                            </p>
+                        </div>
+                        <div class="px-3 py-4 m-0 secondry-color">
+                            <p id="cityName1" class="text-capitalize city-name"></p>
+                            <div class="row align-items-center">
+                                <p id="cityTemp1" class="weather-degree text-light col-6"></p>
+                                <div class="col-6 text-end">
+                                    <img id="weatherIcon1" src class="w-0" alt="" />
+                                </div>
+                            </div>
+                            <p id="weatherCondition1" class="main-color"></p>
+                            <div class="weather-status">
+                                <span class="me-4 w-0">
+                                    <img src="images/icon-umberella.png" class="me-2 w-0" alt="" />
+                                    20%
+                                </span>
+                                <span class="me-4 w-0">
+                                    <img src="images/icon-wind.png" class="me-2 w-0" alt="" />
+                                    18km/h
+                                </span>
+                                <span class="me-4 w-0">
+                                    <img src="images/icon-compass.png" class="me-2 w-0" alt="" />
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- S  E    C   O   N   D             D     A   Y  -->
+                    <div class="second-day-bg text-center col-lg-4">
+                        <div class="weather-header-bg row p-2 secondry-color">
+                            <p id="dayName2" class="m-0 text-capitalize"></p>
+                        </div>
+                        <div class="px-3 py-5 m-0 secondry-color">
+                            <img id="weatherIcon2" src class="mb-2" alt="" />
+                            <p id="maxTemp2" class="future-days-degree-font text-light m-0"></p>
+                            <small id="minTemp2"></small>
+                            <p id="weatherCondition2" class="text-capitalize main-color my-4"></p>
+                        </div>
+                    </div>
+                    <!-- T  I   R     D                D    A   Y -->
+                    <div class="today-weather-bg rounded-end text-center col-lg-4">
+                        <div class="weather-header-bg row p-2 secondry-color">
+                            <p id="dayName3" class="m-0 text-capitalize"></p>
+                        </div>
+                        <div class="today-weather-bg px-3 py-5 m-0 secondry-color">
+                            <img id="weatherIcon3" src class="mb-2" alt="" />
+                            <p id="maxTemp3" class="future-days-degree-font text-light m-0"></p>
+                            <small id="minTemp2"></small>
+                            <p id="weatherCondition3" class="text-capitalize main-color my-4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
